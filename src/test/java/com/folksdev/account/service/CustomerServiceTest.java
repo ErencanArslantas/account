@@ -23,7 +23,7 @@ public class CustomerServiceTest {
   private CustomerService service;
   private CustomerRepository customerRepository;
   private CustomerDtoConverter converter;
-// private static metotların testleri yazılmaz
+// private ve static metotların testleri yazılmaz
   @BeforeEach
   public void setUp(){
    customerRepository = mock(CustomerRepository.class);
@@ -31,6 +31,8 @@ public class CustomerServiceTest {
    service = new CustomerService(customerRepository,converter);
 
   }
+  // ilk datayı çağır
+    // sonra eylemleri
     @Test
     public void testFindByCustomerId_whenCustomerIdExists_shouldReturnCustomer(){
         Customer customer = new Customer("id","name","surname",Set.of());

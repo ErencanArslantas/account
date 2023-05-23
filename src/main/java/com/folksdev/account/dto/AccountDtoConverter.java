@@ -1,6 +1,6 @@
 package com.folksdev.account.dto;
 
-import com.folksdev.account.dto.AccountDto;
+
 import com.folksdev.account.model.Account;
 import org.springframework.stereotype.Component;
 

@@ -3,7 +3,6 @@ package com.folksdev.account.service;
 import com.folksdev.account.dto.AccountDto;
 import com.folksdev.account.dto.AccountDtoConverter;
 import com.folksdev.account.dto.CreateAccountRequest;
-import com.folksdev.account.exception.CustomerNotFoundException;
 import com.folksdev.account.model.Account;
 import com.folksdev.account.model.Customer;
 import com.folksdev.account.model.Transaction;
@@ -11,7 +10,6 @@ import com.folksdev.account.repository.AccountRepository;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
-
 import java.math.BigDecimal;
 import java.time.Clock;
 import java.time.Instant;
